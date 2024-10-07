@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.App-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.App-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.App-button:active {
+    background-color: #003d7a;
+    transform: translateY(0);
+}

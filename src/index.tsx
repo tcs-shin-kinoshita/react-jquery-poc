@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from './Provider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App text='React Component1' backgroundColor='darkblue' />
+    <Provider>
+      <App text='React Component1' backgroundColor='darkblue' />
+    </Provider>
   </React.StrictMode>
 );
 
@@ -18,7 +21,9 @@ const root2 = ReactDOM.createRoot(
 );
 root2.render(
   <React.StrictMode>
-    <App text='React Component2' backgroundColor='darkgreen' />
+    <Provider>
+      <App text='React Component2' backgroundColor='darkgreen' />
+    </Provider>
   </React.StrictMode>
 );
 
