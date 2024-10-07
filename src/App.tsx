@@ -3,16 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 interface AppProps {
+  text?: string;
   backgroundColor?: string;
 }
 
-const App: React.FC<AppProps> = ({ backgroundColor }) => {
+const App: React.FC<AppProps> = ({ text = 'React Component', backgroundColor }) => {
   return (
     <div className="App">
       <header className="App-header" style={{ backgroundColor: backgroundColor }}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          {text}
         </p>
         <a
           className="App-link"
