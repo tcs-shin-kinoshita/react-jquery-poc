@@ -2,10 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+interface AppProps {
+  backgroundColor?: string;
+}
+
+const App: React.FC<AppProps> = ({ backgroundColor }) => {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{ backgroundColor: backgroundColor }}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -21,6 +25,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;

@@ -9,7 +9,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App backgroundColor='darkblue' />
+  </React.StrictMode>
+);
+
+const root2 = ReactDOM.createRoot(
+  document.getElementById('root2') as HTMLElement
+);
+root2.render(
+  <React.StrictMode>
+    <App backgroundColor='darkgreen' />
   </React.StrictMode>
 );
 
