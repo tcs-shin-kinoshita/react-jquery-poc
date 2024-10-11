@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider>
-      <App text='React Component1' backgroundColor='darkblue' />
+      <App text='ReactComponent1' backgroundColor='darkblue' />
     </Provider>
   </React.StrictMode>
 );
@@ -22,7 +22,7 @@ const root2 = ReactDOM.createRoot(
 root2.render(
   <React.StrictMode>
     <Provider>
-      <App text='React Component2' backgroundColor='darkgreen' />
+      <App text='ReactComponent2' backgroundColor='darkgreen' />
     </Provider>
   </React.StrictMode>
 );
