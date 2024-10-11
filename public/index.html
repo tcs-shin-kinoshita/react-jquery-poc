@@ -45,9 +45,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(() => {
+      var count = 0;
       $('#header').html('<h1>jQuery Header</h1>');
       $('#header').on('click', function () {
-        alert('header was clicked!!!');
+        count++;
+        $('#header').html('<h1>jQuery Header: ' + count +  ' times clicked!!</h1>');
       });
     });
   </script>
