@@ -18,10 +18,10 @@ const App: React.FC<AppProps> = ({ text = 'React Component', backgroundColor }) 
     let count = 0;
     const handleClick = () => {
       count++;
-      $('#' + jqueryTextID).html('<p>' + count + '</p>');
+      $('#' + jqueryTextID).text(count);
     };
 
-    $('#' + jqueryTextID).html('<p>' + count + '</p>');
+    $('#' + jqueryTextID).text(count);
     $('#' + jqueryButtonID).on('click', handleClick);
     return () => {
       $('#' + jqueryButtonID).off('click', handleClick);
